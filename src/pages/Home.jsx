@@ -3,7 +3,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carous
 import image from '../assets/image3.jpg';
 import image2 from '../assets/image2.jpg';
 // import { Button } from 'react-bootstrap';
-
+import '../assets/css/Home.css'
 import Section1 from '../components/Section1';
 import Section2 from '../components/Section2';
 import Products from '../components/Products';
@@ -80,7 +80,7 @@ const slides = [
   {
     image: image,
     name: 'I Decore',
-    text: "Embrace Sophistication", // Text for the third image
+    text: "Interior Design", // Text for the third image
   },
 ];
 
@@ -112,6 +112,7 @@ const HeroSlider = () => {
       >
         {slides.map((slide, index) => (
           <div
+          className='Home'
             key={index}
             style={{
               position: 'relative',
@@ -149,8 +150,7 @@ const HeroSlider = () => {
                   top: '50%',
                   left: '50%',
                   transform: 'translate(-50%, -50%)',
-                  color: 'white', // Text color
-                  fontSize: '4rem' 
+                  color: 'white',
                 }}
               >
                 {slide.text}

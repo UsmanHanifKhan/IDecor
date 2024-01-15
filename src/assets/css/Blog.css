@@ -1,0 +1,45 @@
+
+.blogus {
+    position: relative;
+    background: url(../images/blog/image4.jpeg) no-repeat center center/cover;
+    height: 100vh;
+  }
+  .blogus video{
+    object-fit: cover;
+  }
+  
+  .blogus::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  }
+  .blog-div {
+    z-index: 1; 
+    position: relative; 
+    padding-top: 14rem;
+  }
+
+  
+  .text-decoration-none {
+    color: white;
+    z-index: 1; 
+    position: relative;
+  }
+  .blog-bg {
+    position: relative; /* Required for absolute positioning of pseudo-element */
+    background: url('../about.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Set background attachment to fixed */
+    height: 80vh; /* Set height to cover the viewport height */
+  }
+  
+  .blog-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+  }
