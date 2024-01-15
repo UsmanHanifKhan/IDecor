@@ -1,7 +1,7 @@
 .contact {
     position: relative;
     background: url(../image3.jpg) no-repeat center center/cover;
-    height: 85vh;
+    height: 90vh;
   }
   
   .contact::before {
@@ -38,7 +38,7 @@
   }
   
   .form-input:focus {
-    border-color: #e4bb7d; /* Focus color */
+    border-color: #A78F30; /* Focus color */
     outline: none;
   }
   
@@ -51,7 +51,7 @@
   /* Form submit button styles */
   .form-submit-btn {
     padding: 8px 30px;
-    background-color: #fdb343;
+    background-color: #A78F30;
     color: white;
     border: none;
     border-radius: 4px;

@@ -105,11 +105,6 @@
     .Home h1 {
         font-size: 30px;
     }
-    
-  .about-text{
-    width: '100%';
-    font-size: 12px;
-  }
 }
 
 @media (max-width: 767px) {

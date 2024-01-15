@@ -14,6 +14,13 @@ import image9 from '../assets/images/Service/autocad/image9.jpg';
 import image10 from '../assets/images/Service/autocad/image10.jpg';
 import image11 from '../assets/images/Service/autocad/image11.jpg';
 import image12 from '../assets/images/Service/autocad/image12.jpg';
+import image01 from '../assets/images/Service/autocad/image13.jpg';
+import image02 from '../assets/images/Service/autocad/image14.jpg';
+import image03 from '../assets/images/Service/autocad/image15.jpg';
+import image04 from '../assets/images/Service/autocad/image16.jpg';
+import image05 from '../assets/images/Service/autocad/image17.jpg';
+import image06 from '../assets/images/Service/autocad/image18.jpg';
+import image07 from '../assets/images/Service/autocad/image19.jpg';
 
 import image13 from '../assets/images/Service/autocadlt/image1.jpeg';
 import image14 from '../assets/images/Service/autocadlt/image2.jpeg';
@@ -44,9 +51,18 @@ const AutoCad = () => {
 
   // Dummy data with 10 entries
   const projects = [
+    { image: image01, title: "autocad", description: "Additional description for autocad", id: '01' },
+    { image: image02, title: "autocad", description: "Additional description for autocad", id: '02' },
+    { image: image03, title: "autocad", description: "Additional description for autocad", id: '03' },
+    { image: image10, title: "autocad", description: "Additional description for autocad", id: '10' },
+    { image: image06, title: "autocad", description: "Additional description for autocad", id: '06' },
+    { image: image07, title: "autocad", description: "Additional description for autocad", id: '07' },
+
     { image: image1, title: "autocad", description: "Description for Furniture", id: "1" },
     { image: image2, title: "autocad", description: "Description for autocad", id: "2" },
     { image: image3, title: "autocad", description: "Another description for autocad", id: '3' },
+    { image: image04, title: "autocad", description: "Additional description for autocad", id: '04' },
+    { image: image05, title: "autocad", description: "Additional description for autocad", id: '05' },
     { image: image4, title: "autocad", description: "Description for autocad", id: '4' },
     { image: image5, title: "autocad", description: "Another description for autocad", id: '5' },
     { image: image6, title: "autocad", description: "Yet another description for autocad", id: '6' },
@@ -56,6 +72,7 @@ const AutoCad = () => {
     { image: image10, title: "autocad", description: "Additional description for autocad", id: '10' },
     { image: image11, title: "autocad", description: "Additional description for autocad", id: '11' },
     { image: image12, title: "autocad", description: "Additional description for autocad", id: '12' },
+
 
     { image: image13, title: "3d", description: "Description for Furniture", id: "13" },
     { image: image14, title: "3d", description: "Description for 3d", id: "14" },
@@ -99,7 +116,7 @@ const AutoCad = () => {
          <div className="commericial d-flex flex-row flex-nowrap gap-3" style={{ height: '100%' , cursor:'pointer' }}>
          <p className="nav-link" style={selectedCategory === 'autocad' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('autocad')}>AutoCAD</p>
             <p className="nav-link" style={selectedCategory === '3d' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('3d')}>AutoCAD Map 3D</p>
-            <p className="nav-link" style={selectedCategory === '2d' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('2d')}>TAutoCAD Map 2D</p>
+            <p className="nav-link" style={selectedCategory === '2d' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('2d')}>AutoCAD Map 2D</p>
      {/* Add more nav links as needed */}
          </div>
        </div>

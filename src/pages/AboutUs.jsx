@@ -84,9 +84,11 @@ const AboutUs = () => {
                 <div className="about-title text-white text-center">
                     <h4 style={{ color: '#A78F30', fontWeight: 'bold' }}>MAKING A FUNCTIONAL HOME</h4>
                     <h1 >FROM CONCEPT TO FUNCTION</h1>
+                    <Container>
                     <p className="about-text" style={{ margin: 'auto' , paddingBottom:'15px'}}>
                         Praesent fringilla egestas justo. Proin auctor dapibus urna, condimentum ullamcorper enim cursus vel. Ut eget leo finibus, condimentum sapien cursus, dictum nunc. Morbi sit amet nunc mauris. Vestibulum malesuada nisl quis tellus bibendum pulvinar.
                     </p>
+                    </Container>
                     <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}>More About Us</button>
                 </div>
             </Container>
