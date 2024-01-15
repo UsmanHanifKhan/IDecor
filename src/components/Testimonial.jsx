@@ -1,77 +1,21 @@
-// import { Carousel } from 'react-responsive-carousel';
-// import { Card,  Container, Row, Col } from 'react-bootstrap';
-// import "react-responsive-carousel/lib/styles/carousel.min.css";
-// // import './Testimonial.css'; // Your CSS file for styling
-// import testimonialImage from '../assets/testimonial.jpg'
-// const Testimonial = () => {
-//   const testimonials = [
-//     { title: 'John Doe', description: 'This is an amazing product!', stars: 5 },
-//     { title: 'Jane Smith', description: 'Highly recommended!', stars: 4 },
-//     { title: 'Robert Johnson', description: 'Great experience overall.', stars: 5 },
-//     { title: 'John Doe', description: 'This is an amazing product!', stars: 5 },
-//     { title: 'Jane Smith', description: 'Highly recommended!', stars: 4 },
-//     { title: 'Robert Johnson', description: 'Great experience overall.', stars: 5 }
-//     // Add more testimonials as needed
-//   ];
-
-//   return (
-//     <Container >
-//       <h2 className="text-center mb-4">Testimonials</h2>
-//       <Carousel showArrows={true} infiniteLoop={true} autoPlay={true} interval={5000} showStatus={false} showThumbs={false} className="mb-5">
-//         {Array.from({ length: Math.ceil(testimonials.length / 3) }, (_, i) => (
-//           <div key={i}>
-//             <Row>
-//               {testimonials.slice(i * 3, i * 3 + 3).map((testimonial, index) => (
-//                 <Col md={4} key={index}>
-//                   <Card className="testimonial-card shadow">
-//                   <div className="d-flex justify-content-center gap-2 align-item-center">
-//                   <img src={testimonialImage}  style={{width:'100px'}}  alt="" />
-//                   </div>
-//                     <Card.Body>
-//                       <Card.Title>{testimonial.title}</Card.Title>
-//                       <Card.Text>{testimonial.description}</Card.Text>
-//                       <div>
-//                         {Array.from({ length: testimonial.stars }, (_, i) => (
-//                           <span key={i} style={{color:'orange'}}>★</span>
-//                         ))}
-//                       </div>
-//                     </Card.Body>
-//                   </Card>
-//                 </Col>
-//               ))}
-//             </Row>
-//           </div>
-//         ))}
-//       </Carousel>
-//     </Container>
-//   );
-// }
-
-// export default Testimonial;
-
-
-
-
-
-
 import { Carousel } from 'react-responsive-carousel';
 import { Card, Container, Row, Col } from 'react-bootstrap';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import image1 from '../assets/images/usman.jpeg'
-import image2 from '../assets/profile.jpeg'
+import image1 from '../assets/testi1.jpg'
+import image2 from '../assets/test1.jpg'
 import image3 from '../assets/profile3.jpeg'
-import image4 from '../assets/profile1.jpeg'
-import image5 from '../assets/profile2.jpeg'
+import image4 from '../assets/test3.jpg'
+import image5 from '../assets/test4.jpg'
 import image6 from '../assets/profile4.jpeg'
 
 const Testimonial = () => {
   const testimonials = [
-    { title: 'John Doe', image:image1 , description: 'Choosing I Decor for my home interior design was a fantastic decision. Their team brilliantly combined creativity and professionalism, transforming my vision into a stunning reality. From start to finish, the process was seamless. Im now living in a space that perfectly suits my style and lifestyle. Highly recommend', stars: 5 },
+    { title: 'Raven', image:image1 , description: 'Choosing I Decor for my home interior design was a fantastic decision. Their team brilliantly combined creativity and professionalism, transforming my vision into a stunning reality. From start to finish, the process was seamless. Highly recommend', stars: 5 },
     { title: 'Jane Smith', image:image2  , description: 'Working with I Decor was a game-changer for my home. The attention to detail and innovative designs exceeded my expectations. The team dedication to creating a personalized space made the entire experience enjoyable. Truly impressed!', stars: 4 },
-    { title: 'Robert Johnson',image:image3, description: 'Exceptional service! I Decor brought a fresh perspective to my interior design project. Their commitment to quality and unique ideas set them apart. I now have a home that reflects my personality. Thank you for making my space extraordinary', stars: 5 },
+    { title: 'Alia Khabib',image:image3, description: 'Exceptional service! I Decor brought a fresh perspective to my interior design project. Their commitment to quality and unique ideas set them apart. I now have a home that reflects my personality. Thank you for making my space extraordinary', stars: 5 },
     { title: 'John Doe', image:image4 ,description: 'I can not express how pleased I am with the results from I Decor. The level of professionalism and commitment to delivering on my vision was outstanding. The team creative approach and attention to my preferences made the collaboration a success. Highly recommended!', stars: 5 },
     { title: 'Jane Smith',image:image5, description: 'Transformative design! I Decor turned my house into a home that I love. The team expertise and ability to capture my style were impressive. They brought fresh, modern ideas that revitalized every room. Thrilled with the outcome!', stars: 4 },
-    { title: 'Robert Johnson',image:image6, description: 'Choosing I Decor for my interior design needs was a decision I wont regret. Their skilled team went above and beyond to create a space that feels uniquely mine. The combination of functionality and aesthetics is perfect. Thanks for making my dream home a reality', stars: 5 }
+    { title: 'fatima',image:image6, description: 'Choosing I Decor for my interior design needs was a decision I wont regret. Their skilled team went above and beyond to create a space that feels uniquely mine. The combination of functionality and aesthetics is perfect. Thanks for making my dream home a reality', stars: 5 }
     // Add more testimonials as needed
   ];
 
@@ -86,7 +30,7 @@ const Testimonial = () => {
         interval={5000}
         showStatus={false}
         showThumbs={false}  // Set showThumbs to false to display one image at a time
-        // showIndicators={false} 
+        showIndicators={false} 
         className="mb-5"
       >
         {testimonials.map((testimonial, index) => (

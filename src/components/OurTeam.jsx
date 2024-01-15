@@ -24,7 +24,7 @@ const OurTeam = () => {
 
         <Row className="justify-content-center pt-5">
         {projects.map((project, index) => (
-          <Col xs={12} md={6} lg={4} key={index} className="mb-4">
+          <Col xs={12} md={6} lg={2} key={index} className="mb-4">
             <div className="product-card">
               <Card.Img variant="top" src={project.image} className="card-img-top" />
               <div className="card-overlay">

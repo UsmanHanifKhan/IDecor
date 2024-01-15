@@ -18,7 +18,7 @@ function HomeNavbar() {
     <Navbar expand="lg" style={{ background: '#000001', position: 'sticky', top: 0, zIndex: 1000 }}>
       <Container >
         <Navbar.Brand href="#"><img src="https://idecor.ie/wp-content/uploads/elementor/thumbs/ID_LOGO_TRANS_WHITE-p933ew0ztoc4cshqkdgvjr4zom4zoyn3ppv6twgxxs.png" width={70} alt="" /></Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" className="custom-navbar-toggler " />
+        <Navbar.Toggle aria-controls="navbarScroll" className="custom-navbar-toggler bg-white " />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="ms-auto me-auto my-2 my-lg-0 "
