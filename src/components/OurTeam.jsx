@@ -15,7 +15,7 @@ const OurTeam = () => {
     <Container className='py-5'>
         <h3 style={{color:'#A78F30'}}>MEET OUR DESIGNER</h3>
         <h1>OUR PROFESSIONAL</h1>
-        <p>Cras sagittis justo enim, eu sagittis purus molestie vitae. Vestibulum porttitor in massa feugiat blandit. Nunc ac viverra magna. Etiam dictum pellentesque libero a porttitor. Vestibulum dapibus, metus a molestie tincidunt, tortor nisl mollis mi, vitae commodo lorem mi auctor tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+        <p>Step into a world of design excellence with IDecor. Our expertise in AutoCAD, interior and exterior design, and stall decoration is your gateway to transforming spaces with flair. At IDecor, we blend creativity with precision, crafting environments that resonate with style and functionality. Let us redefine your surroundings – contact IDecor for a seamless fusion of innovation and elegance.</p>
 
         <Row className="justify-content-center pt-5">
         {projects.map((project, index) => (

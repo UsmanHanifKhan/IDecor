@@ -72,7 +72,7 @@ const AboutUs = () => {
           ></video> 
           <div className="video__overlay">
             <h1 style={{ color: '#A78F30' }}>The I Decor Services</h1>
-            <p>
+            <p className="text-white">
               We are provide the services of autocad , interior Design , exterior Design and Installments
             </p>
           </div>
@@ -86,7 +86,7 @@ const AboutUs = () => {
                     <h1 >FROM CONCEPT TO FUNCTION</h1>
                     <Container>
                     <p className="about-text" style={{ margin: 'auto' , paddingBottom:'15px'}}>
-                        Praesent fringilla egestas justo. Proin auctor dapibus urna, condimentum ullamcorper enim cursus vel. Ut eget leo finibus, condimentum sapien cursus, dictum nunc. Morbi sit amet nunc mauris. Vestibulum malesuada nisl quis tellus bibendum pulvinar.
+                    I Decor seamlessly brings concepts to life with their interior design services, ensuring a harmonious blend of creativity and functionality in every project.
                     </p>
                     </Container>
                     <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}>More About Us</button>

@@ -37,10 +37,10 @@ const Contact = () => {
           <h3 style={{color:'#A78F30'}}>CONTACT US</h3>
           <h1>Have A Question?</h1>
           <div className="d-flex">
-            <p style={{color:'silver'}} ><span style={{color:'#A78F30' , fontSize:'20px'}} ><FaPhone /></span>  +92 304 3763110</p>
-            <p style={{paddingTop:'3px', color:'silver'}}><span><MdMail  style={{color:'#A78F30' , fontSize:'25px'}} /></span> IDecor@gmail.com</p>
+            <p style={{color:'#000'}} ><span style={{color:'#A78F30' , fontSize:'20px'}} ><FaPhone /></span>  +92 323 2147623</p>
+            <p style={{paddingTop:'3px', color:'#000'}}><span><MdMail  style={{color:'#A78F30' , fontSize:'25px'}} /></span> IDecor@gmail.com</p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <p className='pt-3'>Questions about our services? Feel free to reach out! Call us today for prompt assistance and expert guidance.</p>
         </div>
         <div className=" bg-black p-3 d-flex flex-column border-bottom justify-content-center align-items-center">
           <form onSubmit={handleSubmit} className='pt-4'>

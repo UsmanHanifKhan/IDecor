@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import image from '../assets/images/section1-image.jpg';
 import image2 from '../assets/images/section1-image2.jpg';
 import '../assets/css/Section.css'
+import { Link } from "react-router-dom";
 const Section1 = () => {
 
     return (
@@ -9,24 +10,18 @@ const Section1 = () => {
             <div className="d-flex flex-column flex-md-column flex-lg-row mt-5 gap-3">
                 {/* Content Container */}
                 <div className="d-flex flex-column gap-2 mb-4  " style={{ flex: 1 }}>
-                    <h3 style={{ color: '#A78F30' }} >WELCOME TO HOUSEDECO</h3>
+                    <h3 style={{ color: '#A78F30' }} >WELCOME TO I Decor </h3>
                     <h1 style={{ fontSize: '60px', color: '#000' }}>INTERIOR DESIGN</h1>
                     <p style={{ color: '#848484' }}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                        tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+                    Step into a world of style and sophistication with IDecor interior design services. Our experts blend aesthetics and functionality to create spaces that reflect your unique taste.
                     </p>
                     <h2 style={{ color: '#A78F30' }}>INNOVATIVE</h2>
                     <p style={{ color: '#848484' }}>
-                        Nulla a interdum ipsum. Proin orci nunc, efficitur quis vehicula
-                        ac, iaculis et massa. Etiam interdum, justo finibus hendrerit
-                        vulputate, augue massa porta tellus, eget imperdiet nisl libero at
-                        risus.
+                    Craft a cutting-edge living experience with an innovative interior design that seamlessly integrates smart home technologies, adaptive furniture, and immersive augmented reality, promising a dynamic and personalized environment tailored to modern lifestyles.
                     </p>
                     <h2 style={{ color: '#A78F30' }}>CREATIVE</h2>
                     <p style={{ color: '#848484' }}>
-                        Nulla in eros sit amet sapien viverra pretium. Ut luctus libero
-                        ipsum, eget varius nibh dapibus vitae. Sed non enim felis. Quisque
-                        eget tincidunt ligula. Quisque odio odio.
+                    Ignite creativity within your living space through a truly avant-garde interior design. Unleash interactive walls, adaptable furniture, and augmented reality, weaving together an imaginative tapestry that blurs the lines between art and functionality.
                     </p>
                     {/* <h2 style={{ color: '#A78F30' }}>Crafting Personalized Interiors</h2> */}
                     {/* <p style={{ color: '#848484' }}>
@@ -107,7 +102,7 @@ const Section1 = () => {
                 </div>
             </div>
 
-            <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}>More About Us</button>
+            <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}><Link to={'/about'} className="text-white text-decoration-none">More About Us</Link></button>
         </Container>
     );
 };

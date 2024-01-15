@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './HomeNavbar.css'
 function HomeNavbar() {
 
@@ -59,7 +59,7 @@ function HomeNavbar() {
             ><NavLink className='text-decoration-none fw-medium' style={{ color: '#dddd' }} to={'/contact'}>Contact Us</NavLink></Nav.Link>
 
           </Nav>
-          <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}>Need Help Finding A Venue?</button>
+          <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}><Link className='text-white text-decoration-none' to={'/contact'}>Need Help Finding A Venue?</Link></button>
         </Navbar.Collapse>
       </Container>
     </Navbar>

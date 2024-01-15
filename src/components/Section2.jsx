@@ -133,6 +133,7 @@ import image2 from '../assets/images/section2/section2-image2.jpg';
 import { useEffect } from "react";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
     const carouselImages = [image1, image2];
@@ -190,7 +191,8 @@ const Section2 = () => {
                         <p style={{ color: '#868682' , marginBottom:'25px' }}>
                             In interior design, functionality is paramount. It s not just about looks; it s about making spaces work efficiently. A room should be both beautiful and practical. Essentially, good design blends aesthetics with purpose, ensuring spaces are not only pleasing to the eye but also enhance daily living.
                         </p>
-                        <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}>More About Us</button>
+                        
+                        <button className="btn text-white fs-6" style={{ fontSize: '10px', background: '#A78F30' }}><Link to={'/about'} className="text-white text-decoration-none">More About Us</Link></button>
                     </motion.div>
                 </Col>
 

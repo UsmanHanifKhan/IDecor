@@ -6,6 +6,14 @@ import img4 from '../assets/images/portfolio/product5.jpg';
 import img5 from '../assets/images/portfolio/product6.jpg';
 import img6 from '../assets/images/portfolio/section1-image.jpg';
 import img7 from '../assets/images/portfolio/section1-image2.jpg';
+import img8 from '../assets/images/blog/image3.jpeg';
+import img9 from '../assets/images/blog/image4.jpeg';
+import img10 from '../assets/images/blog/image5.jpeg';
+import img11 from '../assets/images/Service/event/img3.jpeg';
+import img12 from '../assets/images/Service/event/img7.jpg';
+import img13 from '../assets/images/Service/event/img5.jpeg';
+import img14 from '../assets/images/section2/section2-image3.jpg';
+import img15 from '../assets/images/Service/event/img9.jpeg';
 
 const Portfolio = () => {
   const portfolio = [
@@ -16,6 +24,14 @@ const Portfolio = () => {
     { img: img5 },
     { img: img6 },
     { img: img7 },
+    { img: img8 },
+    { img: img9 },
+    { img: img10 },
+    { img: img11 },
+    { img: img12 },
+    { img: img13 },
+    { img: img14 },
+    { img: img15 },
   ];
 
   return (
