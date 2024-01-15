@@ -1,7 +1,8 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
-import image from '../assets/image3.jpg';
-import image2 from '../assets/image2.jpg';
+import image from '../assets/home2.jpg';
+import image2 from '../assets/home1.jpg';
+import image3 from '../assets/image2.jpg'
 // import { Button } from 'react-bootstrap';
 import '../assets/css/Home.css'
 import Section1 from '../components/Section1';
@@ -70,7 +71,7 @@ const slides = [
   {
     image: image,
     name: 'I Decore',
-    text: "Discover Elegance", // Text for the first image
+    text: "Exterior Design", // Text for the first image
   },
   {
     image: image2,
@@ -78,7 +79,7 @@ const slides = [
     text: "Experience Luxury", // Text for the second image
   },
   {
-    image: image,
+    image: image3,
     name: 'I Decore',
     text: "Interior Design", // Text for the third image
   },
