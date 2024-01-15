@@ -92,9 +92,9 @@ const IndustryDecor = () => {
        <div className="container-fluid d-flex border-bottom justify-content-center align-items-center">
          <div className="commericial d-flex flex-row flex-nowrap gap-3" style={{ height: '100%' , cursor:'pointer' }}>
          <p className="nav-link" style={selectedCategory === 'home' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('home')}>Homes</p>
-            <p className="nav-link" style={selectedCategory === 'bath' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('bath')}>Kitchen and Bath Design</p>
-            <p className="nav-link" style={selectedCategory === 'office' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('office')}>Office Spaces</p>
-            <p className="nav-link" style={selectedCategory === 'store' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('store')}> Store Design</p>
+            <p className="nav-link" style={selectedCategory === 'bath' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('bath')}>Kitchen</p>
+            <p className="nav-link" style={selectedCategory === 'office' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('office')}>Office</p>
+            <p className="nav-link" style={selectedCategory === 'store' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('store')}> Store </p>
      {/* Add more nav links as needed */}
          </div>
        </div>

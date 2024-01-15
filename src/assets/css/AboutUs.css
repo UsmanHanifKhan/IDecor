@@ -99,3 +99,32 @@
     flex-direction: column;
     padding-top: 10rem;
   }
+
+
+  @media (max-width: 992px) {
+    .Home h1 {
+        font-size: 30px;
+    }
+    
+  .about-text{
+    width: '100%';
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+  }
+  .about-title h4{
+    font-size: 14px;
+  }
+  .about-text{
+    width: '100%';
+    font-size: 12px;
+  }
+}
