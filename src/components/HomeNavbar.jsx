@@ -33,7 +33,7 @@ function HomeNavbar() {
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }} ><NavLink className='text-decoration-none text-secondary' to={'/autocad'}>Auto Cad</NavLink> </NavDropdown.Item>
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/interiordesign'}>Interior Design</NavLink></NavDropdown.Item>
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/event-decor'}>Event Decoration</NavLink></NavDropdown.Item>
-              <NavDropdown.Item href="#action3" style={{ backgroundColor: 'transparent' }} >Installation</NavDropdown.Item>
+              {/* <NavDropdown.Item href="#action3" style={{ backgroundColor: 'transparent' }} >Installation</NavDropdown.Item> */}
             </NavDropdown>
 
 
