@@ -1,0 +1,23 @@
+body{
+    background-color: '#CEC3B9';
+        font-family: "Poppins", sans-serif;
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        font-weight: 500;
+        font-style: normal;    
+        
+    
+        /* For WebKit browsers (e.g., Chrome, Safari) */
+        &::-webkit-scrollbar {
+            width: 10px; /* Set the width of the scrollbar */
+        }
+    
+        &::-webkit-scrollbar-thumb {
+            background-color: #A78F30; /* Color of the scrollbar thumb */
+            border-radius: 5px; /* Rounded corners for the thumb */
+        }
+    
+        &::-webkit-scrollbar-track {
+            background-color: #fefe; /* Color of the scrollbar track */
+        }
+}
+

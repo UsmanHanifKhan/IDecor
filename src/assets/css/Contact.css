@@ -1,0 +1,62 @@
+.contact {
+    position: relative;
+    background: url(../image3.jpg) no-repeat center center/cover;
+    height: 85vh;
+  }
+  
+  .contact::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  }
+  /* Container styles */
+.contact {
+    padding: 20px;
+  }
+  
+  /* About section styles */
+  .about-div {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact information styles */
+  .d-flex p {
+    margin-right: 15px;
+  }
+  
+  /* Form input styles */
+  .form-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+    outline: none;
+  }
+  
+  .form-input:focus {
+    border-color: #e4bb7d; /* Focus color */
+    outline: none;
+  }
+  
+  /* Textarea specific styles */
+  .form-input.textarea {
+    height: 100px;
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  /* Form submit button styles */
+  .form-submit-btn {
+    padding: 8px 30px;
+    background-color: #fdb343;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  

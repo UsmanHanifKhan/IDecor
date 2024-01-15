@@ -1,0 +1,17 @@
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-top: 25px;
+    height: 0;
+  }
+  
+  .responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+  }
+  
+  /* You can add additional styles for the YouTube-like icon here if needed */
+  

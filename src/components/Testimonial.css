@@ -1,0 +1,11 @@
+.testimonial-card {
+    margin: 0 auto; 
+    max-width: 300px; /* Sets a maximum width for the cards */
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial-card {
+      max-width: 100%; /* Makes the card take full width on smaller screens */
+    }
+  }
+  
