@@ -27,7 +27,7 @@ const Testimonial = () => {
         showArrows={true}
         infiniteLoop={true}
         autoPlay={true}
-        interval={5000}
+        interval={2000}
         showStatus={false}
         showThumbs={false}  // Set showThumbs to false to display one image at a time
         showIndicators={false} 

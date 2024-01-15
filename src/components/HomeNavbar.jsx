@@ -25,10 +25,17 @@ function HomeNavbar() {
             // style={{ maxHeight: '100px' }}
             navbarScroll
           >
+
+
+
             <Nav.Link href="#action1 active"
               className={activeLink === 'Home' ? 'active' : ''}
               onClick={() => handleNavClick('Home')}><NavLink className='text-decoration-none fw-medium ' style={{ color: '#dddd' }} to={'/'}>Home</NavLink></Nav.Link>
 
+            <Nav.Link
+              className={activeLink === 'About' ? 'active-link' : ''}
+              onClick={() => handleNavClick('About')}
+            ><NavLink className='text-decoration-none fw-medium ' style={{ color: '#dddd' }} to={'/about'}>About Us</NavLink></Nav.Link>
             <NavDropdown data-bs-theme="dark" title={<span className='fw-medium' style={{ color: '#dddd' }} >Service</span>} id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }} ><NavLink className='text-decoration-none text-secondary' to={'/autocad'}>Auto Cad</NavLink> </NavDropdown.Item>
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/interiordesign'}>Interior Design</NavLink></NavDropdown.Item>
@@ -36,11 +43,11 @@ function HomeNavbar() {
               {/* <NavDropdown.Item href="#action3" style={{ backgroundColor: 'transparent' }} >Installation</NavDropdown.Item> */}
             </NavDropdown>
 
-
             <Nav.Link
               className={activeLink === 'About' ? 'active-link' : ''}
               onClick={() => handleNavClick('About')}
-            ><NavLink className='text-decoration-none fw-medium ' style={{ color: '#dddd' }} to={'/about'}>About Us</NavLink></Nav.Link>
+            ><NavLink className='text-decoration-none fw-medium' style={{ color: '#dddd' }} to={'/portfolio'}>Portfolio</NavLink></Nav.Link>
+
             <Nav.Link
               className={activeLink === 'About' ? 'active-link' : ''}
               onClick={() => handleNavClick('About')}

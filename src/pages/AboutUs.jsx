@@ -61,7 +61,7 @@ const AboutUs = () => {
                 </motion.div>
             </Container> */}
             
-      <div className="landing">
+      <div className="landing" id="about">
         <div className="video">
            <video
             autoPlay

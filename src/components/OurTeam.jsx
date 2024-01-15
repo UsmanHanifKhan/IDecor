@@ -1,19 +1,14 @@
 
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import image1 from '../assets/profile3.jpeg';
-import image2 from '../assets/profile1.jpeg';
-import image3 from '../assets/profile.jpeg';
-import image4 from '../assets/profile4.jpeg';
-import image5 from '../assets/profile2.jpeg';
+import image1 from '../assets/images/team1.jpg';
+import image2 from '../assets/images/team2.jpg';
+import image3 from '../assets/images/team3.jpg';
 import '../assets/css/Ourteam.css'
 const OurTeam = () => {
     const projects = [
-        { image: image1, title: "MD Arham", description: "Description for Project 1" },
-        { image: image2, title: "Ahmed ", description: "Description for Project 2" },
-        { image: image3, title: "Ali Akbar", description: "Description for Project 3" },
-        { image: image4, title: "Jhone", description: "Description for Project 2" },
-        { image: image5, title: "Kamran", description: "Description for Project 3" },
-        { image: image1, title: "Noor", description: "Description for Project 1" },
+        { image: image1, title: "MD Arham", description: "Business Developer" },
+        { image: image2, title: "Mr. Javed ", description: "AutoCad Designer" },
+        { image: image3, title: "Mr. Mateen", description: "Interior & Exterior Designer" }
       ];
     
   return (
@@ -24,9 +19,9 @@ const OurTeam = () => {
 
         <Row className="justify-content-center pt-5">
         {projects.map((project, index) => (
-          <Col xs={12} md={6} lg={2} key={index} className="mb-4">
-            <div className="product-card">
-              <Card.Img variant="top" src={project.image} className="card-img-top" />
+          <Col xs={12} md={6} lg={4} key={index} className="mb-4">
+            <div className="product-card" >
+              <Card.Img variant="top" src={project.image} style={{height:'25rem'}} className="card-img-top" />
               <div className="card-overlay">
                 <h4 >{project.title}</h4>
                 <p className='text-white' >{project.description}</p>

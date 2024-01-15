@@ -42,7 +42,7 @@ const Contact = () => {
           </div>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
         </div>
-        <div className=" bg-black p-3 d-flex flex-column justify-content-center align-items-center">
+        <div className=" bg-black p-3 d-flex flex-column border-bottom justify-content-center align-items-center">
           <form onSubmit={handleSubmit} className='pt-4'>
           <input
               type="text"

@@ -2,14 +2,22 @@
     font-size: 50px;
 }
 
-@media (max-width: 992px) {
-    .Home h1 {
-        font-size: 30px;
+@media  (max-width: 1600px) {
+    .Home h6 {
+        font-size: 40px;
     }
 }
 
-@media (max-width: 767px) {
-    .Home h1 {
-        font-size: 20px;
+@media (min-width: 280px) and (max-width: 668px) {
+    .Home h6 {
+        font-size: 18px;
     }
 }
+
+
+/* @media (max-width: 767px) {
+    .Home h6 {
+        font-size: 20px;
+    }
+} */
+
