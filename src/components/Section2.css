@@ -1,13 +1,9 @@
-/* Section2.css */
-
-/* For larger devices like desktops and laptops */
 .section2-images
  {
     width: 165px;
     height: 120px;
 }
 
-/* For tablets and smaller devices */
 @media (max-width: 768px) {
     .images {
         width: 100%;

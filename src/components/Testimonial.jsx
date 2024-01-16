@@ -22,7 +22,7 @@ const Testimonial = () => {
     { title: 'Jane Smith', image: image5, description: 'Transformative design! I Decor turned my house into a home that I love. The team expertise and ability to capture my style were impressive. They brought fresh, modern ideas that revitalized every room. Thrilled with the outcome!', stars: 4 },
     { title: 'fatima', image: image6, description: 'Choosing I Decor for my interior design needs was a decision I wont regret. Their skilled team went above and beyond to create a space that feels uniquely mine. The combination of functionality and aesthetics is perfect. Thanks for making my dream home a reality', stars: 5 }
     // Add more testimonials as needed
-  ]; 
+  ];
   return (
     <Container>
       <h4 className="text-center mb-4">Testimonials</h4>

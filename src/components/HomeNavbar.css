@@ -1,14 +1,13 @@
 .active {
-  color: #A78F30 !important; /* Set the active link color to orange */
+  color: #A78F30 !important;
 }
 
-/* HomeNavbar.css */
 
 .navbar {
-  background: transparent; /* Set the initial background color to transparent */
-  transition: background 0.3s ease; /* Add a transition effect */
+  background: transparent; 
+  transition: background 0.3s ease; 
 }
 
 .navbar-scrolled {
-  background: #000; /* Change background color when scrolled */
+  background: #000; 
 }

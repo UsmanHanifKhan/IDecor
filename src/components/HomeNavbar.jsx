@@ -1,4 +1,3 @@
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -22,7 +21,6 @@ function HomeNavbar() {
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="ms-auto me-auto my-2 my-lg-0 "
-            // style={{ maxHeight: '100px' }}
             navbarScroll
           >
 
@@ -39,7 +37,7 @@ function HomeNavbar() {
             <NavDropdown data-bs-theme="dark" title={<span className='fw-medium' style={{ color: '#dddd' }} >Service</span>} id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }} ><NavLink className='text-decoration-none text-secondary' to={'/autocad'}>Auto Cad</NavLink> </NavDropdown.Item>
               <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/interiordesign'}>Interior Design</NavLink></NavDropdown.Item>
-              <NavDropdown.Item href="#action3" className='border-bottom' style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/event-decor'}>Event Decoration</NavLink></NavDropdown.Item>
+              <NavDropdown.Item href="#action3" style={{ backgroundColor: 'transparent' }}><NavLink className='text-decoration-none text-secondary' to={'/event-decor'}>Event Decoration</NavLink></NavDropdown.Item>
               {/* <NavDropdown.Item href="#action3" style={{ backgroundColor: 'transparent' }} >Installation</NavDropdown.Item> */}
             </NavDropdown>
 

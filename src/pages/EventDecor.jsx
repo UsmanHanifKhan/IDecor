@@ -17,9 +17,8 @@ import image11 from '../assets/images/Service/event/img9.jpeg'
 import '../components/Products.css'
 const EventDecor = () => {
   const navigate = useNavigate();
-  // const [selectedCategory, setSelectedCategory] = useState('All'); 
 
-  // Dummy data with 10 entries
+  // Dummy data with 11 entries
   const projects = [
     { image: image1, title: "Wedding Ceremony", description: "Celebrate the union of two souls with a memorable wedding ceremony, filled with love, joy, and special moments.", id: "1" },
     { image: image2, title: "Charity Gala", description: "Make a positive impact by organizing a charity gala, raising funds for a worthy cause through auctions, donations, and awareness.", id: "2" },
@@ -37,29 +36,8 @@ const EventDecor = () => {
   const handleClick = (id) => {
     navigate(`/commercial-decor/${id}`);
   };
-  // const handleCategoryClick = (category) => {
-  //   setSelectedCategory(category);
-  // };
-
-  // const filteredProjects = selectedCategory === 'All'
-  //   ? projects
-  //   : projects.filter(project => project.title === selectedCategory);
-
-    // const activeLinkStyle = {
-    //   color: '#A78F30',  // Change this to your desired color
-    // };
   return (
     <>
-       {/* <nav className="navbar  navbar-expand-md navbar-light ">
-       <div className="container-fluid d-flex border-bottom justify-content-center align-items-center">
-         <div className="commericial d-flex flex-row flex-nowrap gap-3" style={{ height: '100%' , cursor:'pointer' }}>
-         <p className="nav-link" style={selectedCategory === 'home' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('home')}>Homes</p>
-            <p className="nav-link" style={selectedCategory === 'bath' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('bath')}>Kitchen and Bath Design</p>
-            <p className="nav-link" style={selectedCategory === 'office' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('office')}>Office Spaces</p>
-            <p className="nav-link" style={selectedCategory === 'store' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('store')}> Store Design</p>
-         </div>
-       </div>
-     </nav> */}
 
       <Container  className='pt-5'>
         <Row className="justify-content-center">

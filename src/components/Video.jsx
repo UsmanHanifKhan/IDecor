@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import './Video.css';  // Assuming you have a separate CSS file for styling
+import './Video.css'; 
 
 const Video = () => {
   return (

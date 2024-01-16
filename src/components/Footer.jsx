@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { FaFacebook ,  FaLinkedin ,FaSquareTwitter , FaSquareInstagram} from "react-icons/fa6";
+import { FaFacebook, FaLinkedin, FaSquareTwitter, FaSquareInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
@@ -14,14 +14,14 @@ const Footer = () => {
                 alt=""
                 className="mb-3"
               />
-              <p style={{color:'#dede'}}>
-              At iDecor, we’ll help you through every step of the interior design process.<br/> Our team of industry professionals provides our clients with the expertise to know they are in good hands.
+              <p style={{ color: '#dede' }}>
+                At iDecor, we’ll help you through every step of the interior design process.<br /> Our team of industry professionals provides our clients with the expertise to know they are in good hands.
               </p>
               <div className="d-flex mt-2">
                 <span className="me-3 bg-black text-white fs-4"><FaFacebook /></span>
                 <span className="me-3 text-white fs-4"><FaLinkedin /></span>
-                <span className="me-3 text-white fs-4"><FaSquareTwitter/></span>
-                <span className="me-3 text-white fs-4"><FaSquareInstagram/></span>
+                <span className="me-3 text-white fs-4"><FaSquareTwitter /></span>
+                <span className="me-3 text-white fs-4"><FaSquareInstagram /></span>
               </div>
             </Col>
             <Col md={4} className="mt-md-0 mt-4 d-flex flex-column ">

@@ -1,18 +1,16 @@
-/* Add custom styles for enhanced UI */
 .product-card {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .card-img-top {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    height: 200px; /* Set the desired image height */
-    object-fit: cover; /* Ensure the image covers the entire card */
-  }
-  
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+}
+
+.card-img-top {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}

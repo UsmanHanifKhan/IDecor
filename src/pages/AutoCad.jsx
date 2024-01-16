@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../assets/css/CommercialStyle.css';
@@ -33,7 +33,6 @@ import image20 from '../assets/images/Service/autocadlt/image8.jpeg';
 import image21 from '../assets/images/Service/autocadlt/image9.png';
 import image22 from '../assets/images/Service/autocadlt/image5.png';
 
-
 import image23 from '../assets/images/Service/autocad2d/img1.jpeg';
 import image24 from '../assets/images/Service/autocad2d/img2.jpeg';
 import image25 from '../assets/images/Service/autocad2d/img3.jpeg';
@@ -47,9 +46,9 @@ import '../components/Products.css'
 import { FaRegShareFromSquare } from "react-icons/fa6";
 const AutoCad = () => {
   const navigate = useNavigate();
-  const [selectedCategory, setSelectedCategory] = useState('autocad'); 
+  const [selectedCategory, setSelectedCategory] = useState('autocad');
 
-  // Dummy data with 10 entries
+  // Dummy data entries
   const projects = [
     { image: image01, title: "autocad", description: "Additional description for autocad", id: '01' },
     { image: image02, title: "autocad", description: "Additional description for autocad", id: '02' },
@@ -104,7 +103,7 @@ const AutoCad = () => {
     setSelectedCategory(category);
   };
   const filteredProjects = selectedCategory === 'autocad'
-  ?  projects.filter(project => project.title.toLowerCase().includes(selectedCategory.toLowerCase())) : projects.filter(project => project.title.toLowerCase().includes(selectedCategory.toLowerCase())) ;
+    ? projects.filter(project => project.title.toLowerCase().includes(selectedCategory.toLowerCase())) : projects.filter(project => project.title.toLowerCase().includes(selectedCategory.toLowerCase()));
 
   const activeLinkStyle = {
     color: '#A78F30',  // Change this to your desired color
@@ -112,45 +111,30 @@ const AutoCad = () => {
   return (
     <>
       <nav className="navbar  navbar-expand-md navbar-light ">
-       <div className="container-fluid d-flex border-bottom justify-content-center align-items-center">
-         <div className="commericial d-flex flex-row flex-nowrap gap-3" style={{ height: '100%' , cursor:'pointer' }}>
-         <p className="nav-link" style={selectedCategory === 'autocad' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('autocad')}>AutoCAD</p>
-            <p className="nav-link" style={selectedCategory === '3d' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('3d')}>AutoCAD Map 3D</p>
-            <p className="nav-link" style={selectedCategory === '2d' ?  activeLinkStyle : null} onClick={() => handleCategoryClick('2d')}>AutoCAD Map 2D</p>
-     {/* Add more nav links as needed */}
-         </div>
-       </div>
-     </nav>
+        <div className="container-fluid d-flex border-bottom justify-content-center align-items-center">
+          <div className="commericial d-flex flex-row flex-nowrap gap-3" style={{ height: '100%', cursor: 'pointer' }}>
+            <p className="nav-link" style={selectedCategory === 'autocad' ? activeLinkStyle : null} onClick={() => handleCategoryClick('autocad')}>AutoCAD</p>
+            <p className="nav-link" style={selectedCategory === '3d' ? activeLinkStyle : null} onClick={() => handleCategoryClick('3d')}>AutoCAD Map 3D</p>
+            <p className="nav-link" style={selectedCategory === '2d' ? activeLinkStyle : null} onClick={() => handleCategoryClick('2d')}>AutoCAD Map 2D</p>
+          </div>
+        </div>
+      </nav>
 
-      <Container  className='pt-5'>
-        {/* <Row className="justify-content-center">
+      <Container className='pt-5'>
+        <Row className="justify-content-center  ">
           {filteredProjects.map((project, index) => (
             <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-              <Card className="product-card  bg-black border-0" onClick={() => handleClick(project.id)}>
-                <Card.Img variant="top" src={project.image}  />
-                <Card.Body>
-                  <Card.Title className='d-flex justify-content-center align-items-center fs-4' style={{ color: '#A78F30' }} >{project.title}<span className='ps-4'><FaRegShareFromSquare /></span></Card.Title>
-                </Card.Body>
-              </Card>
+              <div className="product-card border shadow">
+                <Card.Img variant="top" src={project.image} className="card-img-top" onClick={() => handleClick(project.id)} />
+                <div className="card-overlay">
+                  <h4 className='d-flex flex-column justify-content-center align-items-center' >{project.title} <span className='fs-1' style={{ cursor: 'pointer' }} ><FaRegShareFromSquare /></span> </h4>
+                </div>
+              </div>
             </Col>
           ))}
-        </Row> */}
-        
-        <Row className="justify-content-center  ">
-        {filteredProjects.map((project, index) => (
-          <Col xs={12} md={6} lg={4} key={index} className="mb-4">
-            <div className="product-card border shadow">
-              <Card.Img variant="top" src={project.image} className="card-img-top" onClick={() => handleClick(project.id)} />
-              <div className="card-overlay">
-                <h4 className='d-flex flex-column justify-content-center align-items-center' >{project.title} <span className='fs-1' style={{cursor:'pointer'}} ><FaRegShareFromSquare/></span> </h4>
-                {/* <p className='text-white' >{project.description}</p> */}
-              </div>
-            </div>
-          </Col>
-        ))}
-      </Row>
+        </Row>
       </Container>
-      
+
     </>
   );
 };
