@@ -1,16 +1,16 @@
 .d-flex {
-    overflow-x: auto; 
-    -ms-overflow-style: none; 
-    scrollbar-width: none;  
-  }
-  
-  .d-flex::-webkit-scrollbar {
-    display: none; 
-  }
-  
-  .commericial p{
-    padding:10px;
-  }
-  .commericial p:hover{
-    background: silver;
-  }
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.d-flex::-webkit-scrollbar {
+  display: none;
+}
+
+.commericial p {
+  padding: 10px;
+}
+.commericial p:hover {
+  background: silver;
+}

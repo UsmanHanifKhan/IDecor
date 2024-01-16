@@ -43,7 +43,7 @@ const Contact = () => {
           <p className='pt-3'>Questions about our services? Feel free to reach out! Call us today for prompt assistance and expert guidance.</p>
         </div>
         <div className=" bg-black p-3 d-flex flex-column border-bottom justify-content-center align-items-center">
-          <form onSubmit={handleSubmit} className='pt-4'>
+          <form onSubmit={handleSubmit}  style={{padding:'60px'}} >
             <input
               type="text"
               name="name"

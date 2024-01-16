@@ -92,9 +92,9 @@ const Products = () => {
               initial="hidden"
               animate={controlsCards}
               variants={variantsCard}>
-              <Card className="product-card">
+              <Card className="product-card"  >
                 <Card.Img variant="top" src={project.image} className="card-img-top" />
-                <Card.Body>
+                <Card.Body style={{height:'7rem'}}>
                   <Card.Title>{project.title}</Card.Title>
                   <Card.Text>{project.description.split(' ').slice(0, 5).join(' ')}...</Card.Text>
                   {/* <button className="ps-5 pe-5 py-1 text-white bg-black pointer rounded" style={{ border: 'none', outline: 'none' }}>View More</button> */}
