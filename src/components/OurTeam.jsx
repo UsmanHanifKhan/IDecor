@@ -6,7 +6,7 @@ import image4 from '../assets/images/team.jpg'
 import '../assets/css/Ourteam.css'
 const OurTeam = () => {
   const projects = [
-    { image: image1, title: "MD Arham & CEO", description: "Business Developer" },
+    { image: image1, title: "MD Arham ", description: " CEO & Business Developer" },
     { image: image4, title: "M Imran", description: "Marketing Manager" },
     { image: image3, title: "Mr. Mateen", description: "Interior & Exterior Designer" },
     { image: image2, title: "Mr. Javed ", description: "AutoCad Designer" },
