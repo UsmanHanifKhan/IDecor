@@ -153,7 +153,7 @@ const HeroSlider = () => {
             key={index}
             style={{
               position: 'relative',
-              height: '620px',
+              height: '700px',
               backgroundImage: `url(${slide.image})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',

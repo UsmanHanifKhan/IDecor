@@ -44,6 +44,7 @@ const Contact = () => {
         </div>
         <div className=" bg-black p-3 d-flex flex-column border-bottom justify-content-center align-items-center">
           <form onSubmit={handleSubmit}  style={{padding:'60px'}} >
+          <h3 className='text-white'>Contact Us</h3>
             <input
               type="text"
               name="name"

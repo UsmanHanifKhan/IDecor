@@ -1,8 +1,9 @@
 import { Card, Col, Container, Row } from 'react-bootstrap';
-import image1 from '../assets/images/team1.jpg';
+import image1 from '../assets/images/Arham.jpg';
 import image2 from '../assets/images/team2.jpg';
 import image3 from '../assets/images/team3.jpg';
 import image4 from '../assets/images/team.jpg'
+import image5 from '../assets/images/team4.jpg'
 import '../assets/css/Ourteam.css'
 const OurTeam = () => {
   const projects = [
@@ -10,6 +11,7 @@ const OurTeam = () => {
     { image: image4, title: "M Imran", description: "Marketing Manager" },
     { image: image3, title: "Mr. Mateen", description: "Interior & Exterior Designer" },
     { image: image2, title: "Mr. Javed ", description: "AutoCad Designer" },
+    { image: image5, title: "Waleed", description: "Event Decor" },
   ];
 
   return (
@@ -20,9 +22,9 @@ const OurTeam = () => {
 
       <Row className="justify-content-center pt-5">
         {projects.map((project, index) => (
-          <Col xs={12} md={6} lg={3} key={index} className="mb-4">
+          <Col xs={12} md={6} lg={4} key={index} className="mb-4">
             <div className="product-card" >
-              <Card.Img variant="top" src={project.image} style={{ height: '25rem' }} className="card-img-top" />
+              <Card.Img variant="top" src={project.image} style={{ height: '30rem' }} className="card-img-top" />
               <div className="card-overlay">
                 <h4 >{project.title}</h4>
                 <p className='text-white' >{project.description}</p>
